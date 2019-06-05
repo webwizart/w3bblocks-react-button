@@ -1,0 +1,44 @@
+html {
+    --primary: deeppink;
+    --secondary:lime;
+}
+
+.btn-small {
+    font-size: 10px;
+}
+
+.btn-medium {
+    font-size: 14px;
+}
+
+.btn-large {
+    font-size: 30px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    margin: 5px;
+    padding: 10px;
+}
+.btn-secondary {
+    background-color: var(--secondary);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #000;
+    margin: 5px;
+    padding: 10px;
+}
+
+.btn-medium {
+    font-size: 14px;
+}
+
+.btn-large {
+    font-size: 30px;
+}
+.disabled {
+    opacity: 0.5;
+}
