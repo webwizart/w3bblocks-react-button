@@ -5,7 +5,7 @@ const defaults = {
   DISABLED: 'disabled',
   EMPTY_STRING: '',
   PRIMARY: 'primary',
-  BUTTON: 'button',
+  BUTTON: 'W3bButton',
   BTN: 'btn-',
   DEFAULT_CLASS: 'btn-medium btn-primary'
 }
