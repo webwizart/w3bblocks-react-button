@@ -5,17 +5,18 @@
   "main": "build/index.js",
   "repository": {
     "type": "git",
-    "url": "<git_repo_url>"
+    "url": "https://github.com/webwizart/w3bblocks-button"
   },
   "peerDependencies": {
     "react": "^16.4.0"
   },
   "scripts": {
     "start": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "jest"
   },
   "author": {
-    "name": "<your npm name>"
+    "name": "w3bwizart"
   },
   "license": "ISC",
   "dependencies": {
@@ -30,6 +31,7 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^2.1.1",
+    "jest": "^24.8.0",
     "style-loader": "^0.23.1",
     "webpack-cli": "^3.0.4"
   }
