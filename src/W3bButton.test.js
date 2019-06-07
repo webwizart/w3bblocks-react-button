@@ -1,5 +1,5 @@
 import React from 'react';
-import W3bButton from '../Button/W3bButton.component.js';
+import W3bButton from './w3bButton.js/index.js';
 import renderer from 'react-test-renderer';
 import {shallow} from 'enzyme';
 

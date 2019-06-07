@@ -2,26 +2,28 @@
   "name": "w3bblocks-button",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index.js",
+  "main": "build/w3bButton.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/webwizart/w3bblocks-button"
   },
-  "peerDependencies": {
-    "react": "^16.4.0"
-  },
+  "peerDependencies": {},
   "scripts": {
     "start": "webpack --watch",
-    "build": "webpack",
-    "test": "jest"
+    "build": "webpack"
   },
   "author": {
     "name": "w3bwizart"
   },
   "license": "ISC",
   "dependencies": {
+    "css-loader": "^2.1.1",
     "react": "^16.4.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.12.0"
+  },
+  "peerDependency": {
+    "react": "^16.4.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -30,9 +32,6 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
-    "css-loader": "^2.1.1",
-    "jest": "^24.8.0",
-    "style-loader": "^0.23.1",
     "webpack-cli": "^3.0.4"
   }
 }

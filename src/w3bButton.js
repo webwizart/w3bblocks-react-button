@@ -1,5 +1,6 @@
 import React from 'react';
-import './W3bButton.css';
+import './w3bButton.css';
+
 
 const defaults = {
   DISABLED: 'disabled',
@@ -24,7 +25,7 @@ const W3bButton = (props) => {
     } else {
       return defaults.DEFAULT_CLASS;
     }
-  }
+  } 
   
   return (
     <button
