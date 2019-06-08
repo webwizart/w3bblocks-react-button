@@ -26,7 +26,6 @@ it('renders a W3bButton with custom value', () => {
 
 it('renders a disabled W3bButton', () => {
   const component = shallow(<W3bButton disabled />);
-  console.log(component.props());
   expect(component.props().className).toEqual('  disabled');
   expect(component.props().disabled).toBe(true);
 });
