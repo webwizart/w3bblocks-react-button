@@ -1,39 +1,43 @@
 import React from 'react';
-import './W3bButton.css';
+import './w3bButton.css';
+
 
 const defaults = {
   DISABLED: 'disabled',
   EMPTY_STRING: '',
   PRIMARY: 'primary',
-  BUTTON: 'button',
+  BUTTON: 'W3bButton',
   BTN: 'btn-',
   DEFAULT_CLASS: 'btn-medium btn-primary'
 }
 const W3bButton = (props) => {
-  let type, size, disabled, style = undefined;
+  let theme, size, disabled, style = undefined;
 
   const parseStyle = () => {
-    props.type ? type = defaults.BTN + props.type : type = 
+    props.theme ? theme = defaults.BTN + props.theme : theme = 
       defaults.EMPTY_STRING;
+    
     size = props.size ? size = defaults.BTN + props.size : size = 
       defaults.EMPTY_STRING;
+    
     disabled = props.disabled ? defaults.DISABLED : defaults.EMPTY_STRING;
-    style = `${type} ${size} ${disabled}`;
-    if (style !== '  ') {
+    
+    style = `${theme} ${size} ${disabled}`;
+    
+    if (style !== '') {
       return style;
     } else {
       return defaults.DEFAULT_CLASS;
     }
-  }
+  } 
   
   return (
     <button
-      className={(`${parseStyle()}`)}
+      className={`${parseStyle()}`}
       disabled={props.disabled || false}
-      type={props.type || defaults.PRIMARY} 
-      onClick={props.onClick} >
-      {props.value || defaults.BUTTON}
-      
+      theme={props.theme || defaults.PRIMARY} 
+      onClick={props.onClick | ''} >
+      {props.value || defaults.BUTTON}   
     </button>
   )
 }
