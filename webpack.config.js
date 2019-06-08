@@ -1,7 +1,7 @@
 var path = require('path');
 module.exports = {
     mode: 'development',
-    entry: './build/w3bButton.js',
+    entry: './src/w3bButton.js',
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'w3bButton.js',
