@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1560024423961" clover="3.2.0">
-  <project timestamp="1560024423961" name="All files">
+<coverage generated="1560024685934" clover="3.2.0">
+  <project timestamp="1560024685934" name="All files">
     <metrics statements="15" coveredstatements="14" conditionals="14" coveredconditionals="12" methods="2" coveredmethods="2" elements="31" coveredelements="28" complexity="0" loc="15" ncloc="15" packages="1" files="2" classes="2"/>
     <file name="w3bButton.css" path="/Users/w3bwizart/Development/1.Projects/w3bblocks-button/src/w3bButton.css">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
