@@ -16,10 +16,14 @@ const W3bButton = (props) => {
   const parseStyle = () => {
     props.theme ? theme = defaults.BTN + props.theme : theme = 
       defaults.EMPTY_STRING;
+    
     size = props.size ? size = defaults.BTN + props.size : size = 
       defaults.EMPTY_STRING;
+    
     disabled = props.disabled ? defaults.DISABLED : defaults.EMPTY_STRING;
+    
     style = `${theme} ${size} ${disabled}`;
+    
     if (style !== '') {
       return style;
     } else {
@@ -32,9 +36,8 @@ const W3bButton = (props) => {
       className={`${parseStyle()}`}
       disabled={props.disabled || false}
       theme={props.theme || defaults.PRIMARY} 
-      onClick={props.onClick} >
-      {props.value || defaults.BUTTON}
-      
+      onClick={props.onClick | ''} >
+      {props.value || defaults.BUTTON}   
     </button>
   )
 }
