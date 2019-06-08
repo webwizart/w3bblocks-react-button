@@ -10,7 +10,8 @@
   "peerDependencies": {},
   "scripts": {
     "start": "webpack --watch",
-    "build": "webpack"
+    "build": "jest && webpack",
+    "test": "jest --watch"
   },
   "author": {
     "name": "w3bwizart"
@@ -18,9 +19,16 @@
   "license": "ISC",
   "dependencies": {
     "css-loader": "^2.1.1",
-    "react": "^16.4.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "style-loader": "^0.23.1",
     "webpack": "^4.12.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      ".+\\.(css|styl|less|sass|scss)$": "jest-transform-css"
+    }
   },
   "peerDependency": {
     "react": "^16.4.0"
@@ -31,7 +39,12 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/plugin-transform-react-jsx": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
+    "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0",
+    "jest-transform-css": "^2.0.0",
     "webpack-cli": "^3.0.4"
   }
 }
