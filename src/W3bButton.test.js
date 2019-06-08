@@ -5,8 +5,8 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
 
 it('renders a typed W3bButton', () => {
-  const component = shallow(<W3bButton type='secondary' />);
-  expect(component.props().type).toEqual('secondary');
+  const component = shallow(<W3bButton theme='secondary' />);
+  expect(component.props().theme).toEqual('secondary');
 });
 
 it('renders a small sized W3bButton', () => {
