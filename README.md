@@ -1,6 +1,6 @@
-# w3bblock-button
-
 Is a part of the W3bBlocks collection
+
+[https://webwizart.github.io/w3bblocks/](https://webwizart.github.io/w3bblocks/)
 
 ## Getting Started
 
