@@ -36,7 +36,7 @@ const W3bButton = (props) => {
       className={`${parseStyle()}`}
       disabled={props.disabled || false}
       theme={props.theme || defaults.PRIMARY} 
-      onClick={props.onClick | ''} >
+      onClick={props.onClick} >
       {props.value || defaults.BUTTON}   
     </button>
   )
