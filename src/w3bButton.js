@@ -37,7 +37,7 @@ const W3bButton = (props) => {
       disabled={props.disabled || false}
       theme={props.theme || defaults.PRIMARY} 
       onClick={props.onClick} 
-      style={props.experiment || {}}
+      experiment={props.experiment || {}}
       >
       {props.value || defaults.BUTTON}   
     </button>
