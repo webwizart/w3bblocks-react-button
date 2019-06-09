@@ -11,12 +11,12 @@ it('renders a typed W3bButton', () => {
 
 it('renders a small sized W3bButton', () => {
   const component = shallow(<W3bButton size='small' />);
-  expect(component.props().className).toEqual(' btn-small ');
+  expect(component.props().className).toEqual('w3bbutton  btn-small ');
 });
 
 it('renders a large sized W3bButton', () => {
   const component = shallow(<W3bButton size='large' />);
-  expect(component.props().className).toEqual(' btn-large ');
+  expect(component.props().className).toEqual('w3bbutton  btn-large ');
 });
 
 it('renders a W3bButton with custom value', () => {
@@ -26,7 +26,7 @@ it('renders a W3bButton with custom value', () => {
 
 it('renders a disabled W3bButton', () => {
   const component = shallow(<W3bButton disabled />);
-  expect(component.props().className).toEqual('  disabled');
+  expect(component.props().className).toEqual('w3bbutton   disabled');
   expect(component.props().disabled).toBe(true);
 });
 

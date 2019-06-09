@@ -44,6 +44,7 @@ For sets of buttons, use specific labels, such as Save or Discard, instead of us
 
 ##  4. <a name='Icons'></a>Icons
 - Use icons (16px) within buttons.
+- Wrap icons with `<W3bButton>`
 - Icons should always appear to the right of the text.
 - Icons used in buttons must be directly related to the action that the user is taking.
 - Icons must be the same color value as the text within a button.
@@ -52,16 +53,15 @@ For sets of buttons, use specific labels, such as Save or Discard, instead of us
 Danger buttons have a different visual style to inform users of potentially destructive actions they are about to take. If using the danger button as a standalone, we recommend styling it as a secondary button. Within a set, the danger button should be styled as a primary button.
 
 # Style 
-Class	              | Property	        | Color token
---------------------|-------------------|------------------
-.primary    	      | text color	      | $text-04
-.primary            | background-color	| $interactive-01
-.icon	              | svg	              | $icon-03
-:hover	            | background-color	| $hover-primary
-:active	            | background-color	| $active-primary
-:focus	            | border           	| $focus
-:disabled	          | background-color	| $disabled-02
-:disabled           | text color	      | $disabled-03
+|Class	                | Property	            | Color token
+|-----------------------|-----------------------|-----------------------|
+|.primary    	        | text color	        | $text-04              |
+|.primary               | background-color	    | $interactive-01       |
+|:hover	                | background-color	    | $hover-primary        |
+|:active	            | background-color	    | $active-primary       |
+|:focus	                | border           	    | $focus                |
+|:disabled	            | background-color	    | $disabled-02          |
+|:disabled              | text color	        | $disabled-03          |
 
 # Code
 ##  6. <a name='Properties'></a>Properties
@@ -73,9 +73,10 @@ Custom attributes will be prefixed with `w3b`,  **w3b-style, w3b-theme, w3b-size
 
  - value - **string**: The text displayed on the button or button label
  - disabled - **boolean**: the component is inactive
- - w3b-type - **string**: `primary/secondary`
- - w3b-size - **string**: `small/medium/large`
- - w3b-style - **object** een object with style rules to overwrite the default styling. Used for storybook
+ - theme - **string**: `primary/secondary`
+ - size - **string**: `small/medium/large`
+ - experiment - **object** een object with style rules to overwrite the default styling. Used for storybook
+ - onClick - due to extendtion of HTMLAttributes this propertie is available and can be used.
  
 ##  7. <a name='Examples'></a>Examples
 Make a new Default W3bButton
@@ -85,13 +86,27 @@ Make a new Default W3bButton
 
 Make a new Configured W3bButton
 ~~~ JavaScript
- <W3bButton 
-        w3b-type="primary"
-        w3b-size="small"
-        value="small Button"
-        disabled
-      >
-    </W3bButton>
+
+<W3bButton 
+    onClick={(event) => (handleClick(event))}
+    theme="primary"  
+    size="small" 
+    experiment={{'color': 'yellow'}}
+/>
+<W3bButton 
+    onClick={(event) => (handleClick(event))}
+    theme="secondary"  
+    size="large" 
+    value="Next"
+/>
+<W3bButton 
+    onClick={(event) => (handleClick(event))}
+    theme="secondary"  
+    size="large" 
+    value="Next"
+    disabled
+/>
+
 ~~~
 
 ##  8. <a name='GettingStarted'></a>Getting Started
