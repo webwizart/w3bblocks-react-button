@@ -1,11 +1,11 @@
 {
-  "name": "w3bblocks-button",
+  "name": "w3bblocks-react-button",
   "version": "1.0.0",
   "description": "",
   "main": "build/w3bButton.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/webwizart/w3bblocks-button"
+    "url": "https://github.com/webwizart/w3bblocks-react-button"
   },
   "peerDependencies": {},
   "scripts": {
