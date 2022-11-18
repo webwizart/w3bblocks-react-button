@@ -45,7 +45,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "jest": "^24.8.0",
-    "jest-transform-css": "^2.0.0",
+    "jest-transform-css": "^6.0.0",
     "webpack-cli": "^3.0.4"
   }
 }
